@@ -1,7 +1,7 @@
 /*
-     Name:
-     Date:
-     Class & Section:  PWA1-####
+     Name: Chris Gross
+     Date:5-6-15
+     Class & Section:  PWA1-Online
      Comments: "Goal 1: Review of WPF"
  */
 
@@ -9,7 +9,7 @@
 
 // Alert Hello World
 
-/* 
+/*
 	Variables
 
      BREAKING A VARIABLE DOWN TO INDIVIDUAL PIECES
@@ -33,7 +33,7 @@
 		null
 
 	Variables: (assignment vs declaration, naming, and literals)
-	
+
 	Variable Names:
 		can have:  letters, numbers, underscore, or $
 		cannot have spaces
@@ -52,12 +52,20 @@
 console.log('------ variables ----------');
 
     //example 1: variables defined properly
+	
+		//var name = "James",course = "PWA1", month = 3;
+		//console.log("name:", name + " / course:", course + " / month:", month);
 
 
     //example 2: variables not defined will = "undefined"
+		
+		//var name, course, month;
+		//console.log("name:", name + " / course:", course + " / month:", month);
 
 
     //example 3: a mix of variables defined and not defined
+		var name, course = "PWA1", month;
+		console.log("name:", name + " / course:", course + " / month:", month);
 
 
     //example 4: declaring multiple variables at once w/ same value
@@ -416,7 +424,7 @@ console.log('------Functions ----------');
     - as an example:
         var identifier = function( var1, var2 ) { //code goes here };
 
-    - two important rules will apply to these new variables..  
+    - two important rules will apply to these new variables.. 
         1. if a variable of the same name already exists globally, the global will
             be ignored, 
         2. the variables will only exist inside the function
@@ -497,4 +505,3 @@ console.log('------Functions ----------');
  4. return Mood
  5. console.log the Results
  ********************************************/
-
