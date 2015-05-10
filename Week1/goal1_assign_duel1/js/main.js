@@ -11,8 +11,8 @@ Online
     console.log("FIGHT!!!");
 
     //player name
-    var playerOneName = "Spiderman";
-    var playerTwoName = "Batman";
+    var playerOneName = "Captain";
+    var playerTwoName = "Commander";
 
     //player damage
     var player1Damage = 20;
