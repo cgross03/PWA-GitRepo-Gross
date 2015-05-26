@@ -10,9 +10,9 @@ Online
 
     console.log("FIGHT!!!");
 
-    var fighterOne = document.querySelector("#captain").querySelector("p");
-    var fighterTwo = document.querySelector("#commander").querySelector("p");
-    var round = document.querySelector("roundNumber");
+    var fighterOne = document.querySelectorAll("#captain p");
+    var fighterTwo = document.querySelectorAll("#commander p");
+    var rounds = document.querySelector("round");
     var button = document.getElementById("fight_btn");
 
 
@@ -31,7 +31,7 @@ Online
 
 
     //initiate round
-    var round=1;
+    var round = 1;
 
         rounds.innerHTML = "Lets Fight!";
         fighterOne.innerHTML = fighters[0].name + ":" + fighters[0].health;
@@ -55,7 +55,7 @@ Online
             //Console log the result
             console.log(result);
 
-        rounds.innerhtml = "round " + round + " Finished!";
+        rounds.innerHTML = "round " + round + " Finished!";
         round++
 
             //If there is no winner display "no winner" and advance to next round.
@@ -67,7 +67,7 @@ Online
                 fighter1_txt.innerHTML = result;
                 fighter2_txt.innerHTML = "";
 
-                button.removeEventListner("Click", fight, false);
+                button.removeEventListener("Click", fight, false);
 
                 document.querySelector(".buttonblue").innerHTML = "FINISHED!"
             };
@@ -92,7 +92,6 @@ Online
         };
         
        return result;
-        console.log(result);
     
     };
 
